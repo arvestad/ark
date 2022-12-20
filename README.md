@@ -28,8 +28,11 @@ modules.
 I would like to be able to write expressions like below.
 
 ```
-import ark
-df = ark.read_csv('file.csv')
+from ark import Ark
+import csv
+
+with open('file.csv') as h:
+	df = Ark.import(h)
 print(mean(df))
 
 m = mean(groupby(df, column(3))

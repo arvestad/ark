@@ -1,12 +1,12 @@
 import pandas as pd
-import ark
+from ark import Ark
 
 df = pd.read_csv('tmp.csv')
 
 print('Pandas:')
 print(df)
 
-a = Ark.read_csv('tmp.csv')
+a = ark.read_csv('tmp.csv')
 print(a)
 
 r1 = ArkRow([1,2,3])
