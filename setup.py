@@ -27,22 +27,22 @@ elif sys.version_info.minor < 5:
     sys.exit('\nSorry, Python < 3.5 is not supported\n')
 
 setuptools.setup(
-    name="ark",
+    name='ark',
     version=__version__,
-    author="Lars Arvestad",
-    author_email="arve@math.su.se",
-    description="A pythonic dataframe",
-    url="https://github.com/arvestad/ark",
-    test_suite = "tests",
+    author='Lars Arvestad',
+    author_email='arve@math.su.se',
+    description='A pythonic dataframe',
+    url='https://github.com/arvestad/ark',
+    test_suite = 'tests',
     packages=setuptools.find_packages(),
     python_requires='>=3.5',
     install_requires=[
         'tabulate>=0.9.0',
     ],
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-        "Operating System :: OS Independent",
-        "Topic :: Science/Research",
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Operating System :: OS Independent',
+        'Topic :: Science/Research',
     ],
 )
