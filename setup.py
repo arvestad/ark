@@ -32,14 +32,11 @@ setuptools.setup(
     author="Lars Arvestad",
     author_email="arve@math.su.se",
     description="A pythonic dataframe",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
     url="https://github.com/arvestad/ark",
     test_suite = "tests",
     packages=setuptools.find_packages(),
     python_requires='>=3.5',
     install_requires=[
-        'numbers',
         'tabulate>=0.9.0',
     ],
     classifiers=(
